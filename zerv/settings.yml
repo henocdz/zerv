@@ -1,0 +1,43 @@
+project:
+  name: 'Zerv Project'
+  root_dir: 'lambdas'
+  settings_file: 'settings'
+  source_code_folder: 'function'
+  requirements_file: 'requirements.txt'
+  precompiled_packages: ~
+  default_environment: 'development'
+
+function:
+  # arn: ~
+  description: ~
+  handler: main.handler
+  name: ~
+  include_project_name: true
+  runtime: python3.6
+  # iam_role: ~
+  default_alias: 'default'
+  aliases: ~
+  region: 'us-west-1'
+
+  api_gateway:
+    # api_id: ~
+    api_name: 'zerv_api'
+    default_stage_name: 'zerv'
+    enabled: false
+    parent_id: ~
+    # resource_id: ~
+    http_methods:
+      - OPTIONS
+      - GET
+      - POST
+      - PUT
+      - DELETE
+    stages: ~
+
+execution:
+  timeout: 300
+  memory_size: 128
+
+environment:
+  required_variables: ~
+  # source_path: ~  # Extension must always be yml

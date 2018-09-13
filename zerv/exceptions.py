@@ -7,6 +7,10 @@ class ZervSettingsException(Exception):
         return "Invalid settings configuration at: %s" % self.file_name
 
 
+class ZervInvalidSettingsException(Exception):
+    pass
+
+
 class ZervDuplicatedFunction(Exception):
     def __init__(self, name, *args, **kwargs):
         super(Exception, self).__init__(*args, **kwargs)
