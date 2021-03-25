@@ -12,7 +12,7 @@ install_requires = [
     'chalice>=1.6.0,<2.0.0',
     'click>=6.6,<7.0',
     'pip>=9,<11',
-    'PyYAML>=3.13,<4.0',
+    'PyYAML>=3.13,<6.0',
 ]
 
 setup(
